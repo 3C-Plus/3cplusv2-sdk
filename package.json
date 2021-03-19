@@ -8,7 +8,7 @@
     "dev": "webpack --progress --colors --watch --env dev",
     "lint": "eslint src",
     "clean": "rm -r lib",
-    "publish": "yarn run clean && yarn run build && npm publish --access public"
+    "publish": "yarn run clean && yarn run build && npm publish"
   },
   "author": "Lucas Souza <lucas@fluxoti.com>",
   "license": "MIT",
