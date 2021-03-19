@@ -1,8 +1,8 @@
 {
   "name": "@3cplus/3cplusv2-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The 3cplus V2 js sdk",
-  "main": "lib/@3cplus/3cplusv2-sdk.js",
+  "main": "lib/@3cplus/3cplusv2-sdk",
   "scripts": {
     "build": "webpack --env dev && webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
