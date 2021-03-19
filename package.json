@@ -1,23 +1,23 @@
 {
-  "name": "3cplusv2-sdk-js",
-  "version": "0.3.0",
+  "name": "@3cplus/3cplusv2-sdk",
+  "version": "1.0.0",
   "description": "The 3cplus V2 js sdk",
-  "main": "lib/3cplusv2-sdk-js.js",
+  "main": "lib/3cplusv2-sdk-js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "lint": "eslint src",
     "clean": "rm -r lib",
-    "publish": "yarn run clean && yarn run build && npm publish"
+    "publish": "yarn run clean && yarn run build && npm publish --access public"
   },
-  "author": "Mauri de Souza Nunes <mauri.nunes@fluxoti.com>",
+  "author": "Lucas Souza <lucas@fluxoti.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "events": "^3.2.0",
     "isomorphic-ws": "^4.0.1",
-    "jssip": "^3.3.6",
-    "socket.io-client": "^2.2.0"
+    "jssip": "^3.7.3",
+    "socket.io-client": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
@@ -44,5 +44,16 @@
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8",
     "yargs": "^10.0.3"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3C-Plus/3cplusv2-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3C-Plus/3cplusv2-sdk/issues"
+  },
+  "homepage": "https://github.com/3C-Plus/3cplusv2-sdk#readme"
 }
