@@ -25,16 +25,6 @@ sdk.user().me()
 .then((response) => console.log(response.data))
 .catch((err) => console.log(err.response.data))
 
-// Realtime integration events
-sdk = sdk.websocket('wss://events.3c.fluxoti.com/ws/me')
-const events = sdk.events()
-
-events.on('open', () => console.log('Connected'))
-events.on('close', () => console.log('Connection closed'))
-events.on('error', err => console.log(err))
-events.on('message', evt => console.log(evt))
-events.on('event-name-here', evt => console.log(evt))
-
 // Realtime events (legacy)
 sdk = sdk.socket('https://socket.3c.fluxoti.com')
 const socket = sdk.realtime().integration()
