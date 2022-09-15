@@ -11,8 +11,8 @@ class UserEndpoints {
    * User profile information.
    * @returns {Promise}
    */
-  me () {
-    return this.client.get('/me')
+  me (data = {}) {
+    return this.client.get('/me', data)
   }
 
   /**
